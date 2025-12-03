@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dizzyvizzy | Data Scientist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <!-- Header & Nav -->
+    <header class="bg-gray-900 sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Dizzyvizzy</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="hover:text-purple-400">About Me</a>
+                <a href="#projects" class="hover:text-purple-400">Projects</a>
+                <a href="#contact" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-700">About Me</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-700">Projects</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-24 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Data Scientist</span> & Creative Technologist
+        </h1>
+        <p class="mt-4 text-lg text-gray-400">I build intelligent systems and data-driven applications.</p>
+        <div class="mt-8 flex justify-center space-x-4">
+            <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">View Resume</a>
+            <a href="#contact" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">Contact Me</a>
+        </div>
+    </section>
+
+    <main>
+        <!-- About Me Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+                <div class="max-w-3xl mx-auto text-center text-gray-400">
+                    <p class="text-lg">
+                        I am a passionate Data Scientist with a knack for uncovering hidden patterns in data and building predictive models that drive business value. My expertise lies in machine learning, statistical analysis, and data visualization. I am driven by a curiosity to understand complex systems and a desire to create impactful, data-informed solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img class="w-full h-48 object-cover" src="./assets/images/project1.svg" alt="Project 1 Placeholder">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Project Title 1</h3>
+                            <p class="text-gray-400 mb-4">This project achieved X by implementing Y, resulting in a 15% reduction in operational costs.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-purple-600/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Python</span>
+                                <span class="bg-purple-600/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">XGBoost</span>
+                                <span class="bg-purple-600/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Streamlit</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <a href="#" class="text-purple-400 hover:underline">View Code</a>
+                                <a href="#" class="text-purple-400 hover:underline">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img class="w-full h-48 object-cover" src="./assets/images/project2.svg" alt="Project 2 Placeholder">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Project Title 2</h3>
+                            <p class="text-gray-400 mb-4">We developed a predictive maintenance model that decreased equipment downtime by 25%.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-purple-600/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Scikit-learn</span>
+                                <span class="bg-purple-600/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Flask</span>
+                                <span class="bg-purple-600/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Docker</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <a href="#" class="text-purple-400 hover:underline">View Code</a>
+                                <a href="#" class="text-purple-400 hover:underline">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img class="w-full h-48 object-cover" src="./assets/images/project3.svg" alt="Project 3 Placeholder">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Project Title 3</h3>
+                            <p class="text-gray-400 mb-4">An interactive dashboard was created to visualize sales data, leading to a 10% increase in revenue.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-purple-600/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Pandas</span>
+                                <span class="bg-purple-600/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Plotly</span>
+                                <span class="bg-purple-600/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">AWS S3</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <a href="#" class="text-purple-400 hover:underline">View Code</a>
+                                <a href="#" class="text-purple-400 hover:underline">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-gray-400 mb-8">Feel free to reach out for collaborations or just a friendly chat.</p>
+                <a href="mailto:hello@example.com" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">hello@example.com</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 Dizzyvizzy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
