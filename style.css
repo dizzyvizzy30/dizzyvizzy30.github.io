@@ -1,1 +1,54 @@
 /* No custom CSS needed, everything is handled by Tailwind CSS */
+
+/* Custom styles for the vertical tabbed experience section */
+.tab-button {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    width: 100%;
+    font-weight: 600;
+    color: #9CA3AF; /* gray-400 */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+/* On desktop, the active tab has a border on the right */
+@media (min-width: 768px) {
+    .tab-button {
+        border-right: 2px solid transparent;
+        margin-right: -2px; /* Overlap the container's border */
+    }
+    .tab-button.active-tab {
+        color: #FBBF24; /* amber-400 */
+        border-right-color: #FBBF24; /* amber-400 */
+        background-color: rgba(251, 191, 36, 0.05);
+    }
+}
+
+/* On mobile, the active tab has a border on the bottom */
+@media (max-width: 767px) {
+    .tab-button {
+        border-bottom: 2px solid transparent;
+        margin-bottom: -2px; /* Overlap the container's border */
+    }
+    .tab-button.active-tab {
+        color: #FBBF24; /* amber-400 */
+        border-bottom-color: #FBBF24; /* amber-400 */
+    }
+}
+
+.tab-button:hover {
+    color: #FBBF24; /* amber-400 */
+    background-color: rgba(251, 191, 36, 0.05);
+}
+
+.tab-content {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
